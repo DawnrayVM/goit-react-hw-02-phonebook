@@ -56,6 +56,7 @@ class App extends Component {
                     onAddContact={this.handleAddContact}
                 />
                 <ContactsFilter
+                    contacts={contacts}
                     filterValue={filter}
                     onChange={this.handleFilter}
                 />

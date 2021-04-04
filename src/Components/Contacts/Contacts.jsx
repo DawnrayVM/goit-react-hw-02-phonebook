@@ -4,8 +4,8 @@ const useStyles = createUseStyles({
     contactsList: {
         flexDirection: 'column',
         fontFamily: 'Roboto',
-        fontSize: 14,
-        width: 270,
+        fontSize: 20,
+        width: 370,
         marginTop: 10,
         padding: '10px 10px',
         border: '1px solid rgba(225, 225, 225, 10)',
@@ -14,10 +14,10 @@ const useStyles = createUseStyles({
     },
     deleteBtn: {
         display: 'block',
-        width: 50,
+        width: 100,
         borderStyle: 'none',
         fontWeight: 500,
-        fontSize: 10,
+        fontSize: 16,
         color: 'white',
         textDecoration: 'none',
         padding: '5px 10px',
@@ -63,7 +63,7 @@ const Contacts = ({ contacts, onDeleteContact }) => {
         </li>
     ));
     return (
-        contactItem.length > 0 && (
+        contacts.length > 0 && (
             <ul className={classes.contactsList}>{contactItem}</ul>
         )
     );
